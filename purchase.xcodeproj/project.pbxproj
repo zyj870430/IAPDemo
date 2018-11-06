@@ -15,6 +15,7 @@
 		6AE9A0D11CF3FEC4003F9D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE9A0CF1CF3FEC4003F9D4B /* LaunchScreen.storyboard */; };
 		6AE9A0DC1CF3FEC4003F9D4B /* purchaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE9A0DB1CF3FEC4003F9D4B /* purchaseTests.m */; };
 		6AE9A0E71CF3FEC4003F9D4B /* purchaseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE9A0E61CF3FEC4003F9D4B /* purchaseUITests.m */; };
+		6AE9A0F51CF402BD003F9D4B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE9A0F41CF402BD003F9D4B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6AE9A0E21CF3FEC4003F9D4B /* purchaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = purchaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE9A0E61CF3FEC4003F9D4B /* purchaseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = purchaseUITests.m; sourceTree = "<group>"; };
 		6AE9A0E81CF3FEC4003F9D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE9A0F41CF402BD003F9D4B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE9A0F51CF402BD003F9D4B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		6AE9A0B51CF3FEC4003F9D4B = {
 			isa = PBXGroup;
 			children = (
+				6AE9A0F41CF402BD003F9D4B /* StoreKit.framework */,
 				6AE9A0C01CF3FEC4003F9D4B /* purchase */,
 				6AE9A0DA1CF3FEC4003F9D4B /* purchaseTests */,
 				6AE9A0E51CF3FEC4003F9D4B /* purchaseUITests */,
@@ -414,8 +418,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = purchase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hiteam.linda.purchase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiteamtech.greateU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -425,8 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = purchase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hiteam.linda.purchase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiteamtech.greateU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -498,6 +504,7 @@
 				6AE9A0ED1CF3FEC4003F9D4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AE9A0EE1CF3FEC4003F9D4B /* Build configuration list for PBXNativeTarget "purchaseTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				6AE9A0F01CF3FEC4003F9D4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AE9A0F11CF3FEC4003F9D4B /* Build configuration list for PBXNativeTarget "purchaseUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				6AE9A0F31CF3FEC4003F9D4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
